@@ -95,6 +95,9 @@ public class DepositoCombustible {
     * 
     */
 	public void consumir(double amount){
+		if(amount<0){
+			amount=amount*-1;
+		}
        depNivel = depNivel - amount;
     }
 }
