@@ -85,7 +85,14 @@ public class DepositoCombustible {
 	* 
 	*/
     public void fill(double amount){
+    	if(amount<0){
+			amount=amount*-1;
+			System.out.print("El numero se ha convertido en positivo ya que no se puede añadir negativos");
+		}
+    	
+    	if(depNivel+amount<depMax){
        depNivel = depNivel + amount;
+    	}
     }
 
    /**
@@ -98,6 +105,8 @@ public class DepositoCombustible {
 		if(amount<0){
 			amount=amount*-1;
 		}
+		if(depNivel>amount) {
        depNivel = depNivel - amount;
+		}
     }
 }
