@@ -1,8 +1,8 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class Mediacapacidad {
+public class Mediacapacidad {
 
 	DepositoCombustible tank = new DepositoCombustible(20.0,0.0);
 

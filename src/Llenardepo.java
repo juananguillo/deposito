@@ -1,13 +1,13 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class Llenardepo {
+public class Llenardepo {
 
 	DepositoCombustible tank = new DepositoCombustible(40.0,40.0);
 
 	@Test
-	void test() {
+	public void test() {
 		tank.fill(-25.0);
 		assertEquals(40.0, tank.getDepositoNivel());
 	}

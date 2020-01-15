@@ -1,11 +1,11 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class Vacio {
+public class Vacio {
 	DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
 	@Test
-	void test() {
+	public void test() {
 		assertEquals(true, tank.estaVacio());
 		
 	}
